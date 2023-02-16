@@ -29,7 +29,7 @@ class Product extends React.Component {
     }
 
     componentDidUpdate(){
-        console.log("I have been updated"+this.state.updated + "times");
+        console.log("I have been updated "+ this.state.updated + " times");
     }
 
     //componentDidUnmount(){
@@ -39,22 +39,15 @@ class Product extends React.Component {
     addLikes=(e)=>{
         e.preventDefault();
         this.setState((oldState) => ({
-                product :{...oldState.product,like:oldState.product.like +1,updated:oldState.product.updated +1}
-
-
-
+                product :{...oldState.product,like:oldState.product.like +1},
+                updated: oldState.updated + 1
             }
         ));
 
     }
 
 
-    handleBuyClick = () => {
-        this.setState({ showAlert: true });
-        setTimeout(() => {
-            this.setState({ showAlert: false });
-        }, 2000);
-    }
+
 
 
 
@@ -68,7 +61,7 @@ class Product extends React.Component {
                     <Card.Body className='text-center'>
                         <Card.Title>{this.state.product.name}</Card.Title>
                         <Card.Text>Price :{this.state.product.price}</Card.Text>
-                        <Card.Text>Quality :{this.state.product.quantity}</Card.Text>
+                        <Card.Text>Quantity :{this.state.product.quantity}</Card.Text>
                         <Card.Text>Like :{this.state.product.like}</Card.Text>
 
                         <Card.Text>
@@ -80,7 +73,7 @@ class Product extends React.Component {
                                 buy
                             </Button>
                             {this.state.showAlert &&
-                                <Alert variant="success" style={{color : "blue" , backgroundColor:"skyblue"}}>
+                                <Alert variant="success" style={{color : "orange" , backgroundColor:"cornflowerblue"}}>
                                     You bought an Item
                                 </Alert>
                             }
