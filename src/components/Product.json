@@ -1,0 +1,4 @@
+
+[  {    "id": 1,    "title": "Product 1",    "price": 9.99,    "image": "product1.webp" ,"quantity":"5","description":"Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page" , "like":0 },
+{    "id": 2,    "title": "Product 2",    "price": 19.99,    "image": "product2.jpg"  ,"quantity":"5","description":"Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page" , "like":0},
+{    "id": 3,    "title": "Product 3",    "price": 29.99,    "image": "product3.jpg" ,"quantity":"5","description":"Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page" ,"like":0  }]
